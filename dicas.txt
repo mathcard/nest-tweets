@@ -1,0 +1,42 @@
+https://www.youtube.com/watch?v=PHIMN85trgk&t=1122s
+PAREI 1:59:40
+
+@somethings
+
+Modulo é um agregado de coisas, gerando um conjunsto fechado que pode ser reutilizado.
+Controller - Onde será registrado as rotas.
+Service regra de negócio
+
+
+nest g controller name_controller
+
+nest q service database
+
+### Criando modulo completo
+
+nest g resource tweets
+
+Pesquisar sobre Exception e Filters para erros
+
+-- Instalando ORM
+npm install sequelize sequelize-typescript @nestjs/sequelize sqlite3
+npm install @types/sequelize --save-dev
+npm install sequelize@6.14.0
+
+Apagando sqlite rm dist/database.sqlite
+
+-- Trabalhando com tarefas agendadas
+npm install @nestjs/schedule
+
+-- Criando servico agendado
+nest g service tweets-count
+
+-- Trabalhando com cache
+npm install cache-manager
+npm install @types/cache-manager --save-dev
+
+-- Iniciando trabalho dentor do container
+docker exec -it 6eb92addb473 sh
+npm install bull
+npm install @nestjs/bull
+npm install @types/bull --save-dev
